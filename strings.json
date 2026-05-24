@@ -1,0 +1,29 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Set up Markisol Cover",
+        "data": {
+          "transmitter": "RF Transmitter",
+          "remote_id": "Remote ID",
+          "model_id": "Model ID",
+          "channel": "Channel"
+        },
+        "data_description": {
+          "transmitter": "The ESPHome RF transmitter entity to use for sending commands.",
+          "remote_id": "16-bit remote identifier in hexadecimal (e.g. F74F). Must match the ID used when pairing the blind.",
+          "model_id": "8-bit model identifier in hexadecimal. Default 01 for BY-305/BF-305.",
+          "channel": "Channel number the blind is paired to."
+        }
+      }
+    },
+    "error": {
+      "invalid_remote_id": "Invalid remote ID. Enter a 1-4 digit hexadecimal value (0000-FFFF).",
+      "invalid_model_id": "Invalid model ID. Enter a 1-2 digit hexadecimal value (00-FF)."
+    },
+    "abort": {
+      "no_transmitters": "No compatible RF transmitters found. Make sure your ESPHome device with remote_transmitter is connected to Home Assistant.",
+      "already_configured": "Markisol Cover is already configured."
+    }
+  }
+}

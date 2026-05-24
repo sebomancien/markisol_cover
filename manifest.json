@@ -1,0 +1,10 @@
+{
+  "domain": "markisol_cover",
+  "name": "Markisol Cover",
+  "codeowners": [],
+  "config_flow": true,
+  "dependencies": ["radio_frequency"],
+  "iot_class": "assumed_state",
+  "integration_type": "device",
+  "version": "1.0.0"
+}
